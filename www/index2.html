@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TM-CSS-Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            /* grid-auto-rows: 100px; */
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap: 1em;
+        }
+        .nested > div{
+            border: #333 1px solid;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sit deserunt dolore consectetur mollitia ipsa officiis dolor ad ducimus! Earum repudiandae molestias voluptas, error temporibus cum non tempore in ab, dolor nisi eius alias rem assumenda minima accusamus nemo iure?
+        </div>
+        <div class="nested">
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>

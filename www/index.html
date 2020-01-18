@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+
+            grid-gap: 1em;
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
     <title>TM-CSS-Grid</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium deleniti cumque sunt earum qui nisi expedita, mollitia rerum iure! Architecto consectetur magni mollitia iusto. Tenetur, recusandae dicta? Vitae, architecto eum nam ad rem nisi asperiores, distinctio mollitia aperiam quaerat, non impedit laudantium molestiae id aliquam sed. Accusamus quas sequi eaque soluta voluptate assumenda accusantium ea numquam perferendis minima iusto eum asperiores delectus sapiente ducimus, ullam pariatur quaerat velit vel nisi facere eligendi nam debitis quae. Accusantium aliquam qui quod debitis?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda laboriosam officiis, doloremque quae recusandae est sapiente ipsa atque! Quasi, labore? Ullam qui ipsum maiores, quo impedit deserunt molestias at.
+        </div>
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium deleniti cumque sunt earum qui nisi expedita, mollitia rerum iure! Architecto consectetur magni mollitia iusto. Tenetur, recusandae dicta? Vitae, architecto eum nam ad rem nisi asperiores, distinctio mollitia aperiam quaerat, non impedit laudantium molestiae id aliquam sed. Accusamus quas sequi eaque soluta voluptate assumenda accusantium ea numquam perferendis minima iusto eum asperiores delectus sapiente ducimus, ullam pariatur quaerat velit vel nisi facere eligendi nam debitis quae. Accusantium aliquam qui quod debitis?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda laboriosam officiis, doloremque quae recusandae est sapiente ipsa atque! Quasi, labore? Ullam qui ipsum maiores, quo impedit deserunt molestias at.
+        </div>
+    </div>
 </body>
 </html>
